@@ -64,15 +64,11 @@ export default class blockARv2 extends Component {
                 length: 0.05,
                 chamferRadius: 0.01 }}
         color='#00F'/>
-          /*
-<ARKit.Model
-            position={{x: this.state.blocks.length * Math.random()*Math.cos(index), y: this.state.blocks.length * Math.random()*Math.cos(index), z: this.state.blocks.length * Math.random()*Math.cos(index), frame: 'local' }}
-            scale={0.01}
-            model={{
-              scale: 1, // this is deprecated, use the scale property that is available on all 3d objects
-              file: 'CustomAssets.scnassets/Cat.dae', // make sure you have the model file in the ios project
-            }}
-          />
+          /* if you prefer cats over blocks
+          <ARNode
+        modelAssetPath={'CustomAssets.scnassets/Cat.dae:Cat'}
+        geoposition={{x: this.state.blocks.length * Math.random()*Math.cos(index), y: this.state.blocks.length * Math.random()*Math.cos(index), z: this.state.blocks.length * Math.random()*Math.cos(index)}}
+        />
           */
     )}
     </ARScene>
